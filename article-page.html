@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    
+    body {
+       font-family: 'Roboto';    
+
+    }
+ 
+   
+
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+   .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+      background-color: #4682B4;
+    }
+
+   .navbar-inverse {
+      
+      background-color: #4682B4;
+      border-color: #4682B4;
+   }
+
+   .navbar-inverse .navbar-nav>.active>a {
+      color: #ffffff
+    }
+    
+   .navbar-inverse .navbar-nav>li>a {
+    color: #ffffff;
+   }
+
+
+    .row {
+      margin-right: 0px; 
+      margin-left: 0px; 
+     }
+
+    .col-sm-5 {
+      padding-right: 0px; 
+      padding-left: 0px; 
+    }
+   
+         /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+    
+   .carousel slide{
+    
+    }
+
+   .carousel-inner {
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+      height:300px;
+  }
+  .carousel-inner img {
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+      height:200px;
+  }
+
+  /* Hide the carousel text when the screen is less than 600 pixels wide */
+  @media (max-width: 768px) {
+     
+    .carousel-caption {
+      display: none; 
+    }
+  }
+
+ /* Hide the Grid article body when the screen is less than 767 pixels wide */
+  @media (max-width: 600px) {
+    .col-sm-12 h5 {
+      display: none; 
+    }
+  }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" style="padding: 0px 0px">
+        <img class="img-responsive" src="logo-new.png" height="55x" width="55px" ></img>
+      </a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav" >
+        <li ><a href="GetItinerary-Home.html">Home</a></li>
+        <li ><a href="about.html">About</a></li>
+        <li class="active"><a href="itineraries.html">Itineraries</a></li>
+        <li ><a href="contribute.html">Contribute</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+
+  </div>
+</nav>
+<br>
+<!----------------------------------------------------------------------------------------->
+
+<div class="container" >
+  <div class="jumbotron" style="height:150px; background-color: #4682B4">
+    <h1 style="color:#ffffff">A week in Krabi beaches </h1> 
+    
+  </div>
+</div>
+
+<br>
+
+  
+<!----------------------------------------------------------------------------------------->
+
+<div class="container"  style="width:1000px; font-size:16px; color: #808080">    
+   <p style="font-size:16px; color: #808080">Here we give some ideas to help you make the most of a 3, 7 or 14 day stay in Krabi. If you are arriving in Krabi in the afternoon, you may also find our suggestions for how to spend your first day in Krabi useful. There is a list of tours or activities that have late or flexible departures so you don’t waste a minute of your holiday!
+   <br>
+   <u> 3 days in Krabi</u>
+   <br>
+
+    <p> If you’re rushing through (why Look at all the things you’re going to miss below!), you can do no better than follow our action packed itinerary, which takes in the most popular tourist attractions in the province.
+
+        Koh Poda, one of the islands on the Krabi 4 islands tour. The 4 islands can be done in a half day – ideal for your arrival excursion <br>
+    <br>
+    <u>DAY ONE</u>: Ao Nang and the 4-island tour. Book this with a tour agent (to get snorkeling equipment and lunch), or do it independently (if you are pushed for time – it can be done in 4 hours – or to get your own schedule) – see Getting Around for details. Dinner in Ao Nang offers everything from pizza to sushi and the friendly nightlife is worth hanging around for.
+    <br><br>
+<!----------------------------------------------------------------------------------------->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="img1.jpg" alt="Image">   
+      </div>
+
+      <div class="item">
+        <img src="img2.jpg" alt="Image">   
+      </div>
+
+     <div class="item">
+        <img src="img3.jpg" alt="Image">
+        </div>
+
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+</div>
+
+<!----------------------------------------------------------------------------------------->
+<br>
+    <u>DAY TWO </u>: Visit the famous forest temple at Tiger Cave and climb the 1260 stairs to the mountain-top shrine – the views are breathtaking. Spend the rest of the day in Krabi Town shopping or trying the excellent local food.
+    <br><br>
+    <u>DAY THREE</u>: Day trip to the Phi Phi Islands. Known as ‘the jewels of the Andaman Sea’ or, more recently, as ‘the place where The Beach was filmed’, this group of six islands is exceptionally beautiful and really a “must-see”, even with the crowds. Round off your stay with a seafood dinner.
+    <br>
+   </p>
+
+
+  <h2>Detailed Itinerary</h2>
+              
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Day</th>
+        <th>Activity</th>
+        <th>Budget Approximation</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Day 1</td>
+        <td>Island Hopping</td>
+        <td>Rs 5000/person</td>
+      </tr>
+      <tr>
+        <td>Day 2</td>
+        <td>Railay Beach</td>
+        <td>Rs 3000/person</td>
+      </tr>
+      
+    </tbody>
+  </table>
+
+
+
+</div>
+
+<!----------------------------------------------------------------------------------------->
+<footer class="container-fluid text-center">
+    <form class="form-inline">Subscribe 
+    <input type="email" class="form-control" size="50" placeholder="Email Address">
+    <button type="button" class="btn btn-danger">Sign Up</button>
+  </form>
+</footer>
+
+</body>
+</html>
